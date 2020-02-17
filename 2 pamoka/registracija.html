@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registracija</title>
+</head>
+<body>
+<h1>Registracija į kursus</h1>
+<hr>
+Vardas:<input name="regName" type="text" placeholder="Vardas">
+<br>
+<h2>Programavimo kalba:</h2>
+<ul style="list-style-type:none;">
+    <li>C++<input name="regLanguage" id="cpp" type="radio"></li>
+    <li>PHP<input name="regLanguage" id="php" type="radio"></li>
+    <li>Python<input name="regLanguage" id="python" type="radio"></li>
+</ul>
+<br>
+<h2>Papildoma informacija</h2>
+<p>
+<textarea name="regComment" placeholder="Paminėkite savo ankstesnę patirtį programavime" rows="5" cols="30"></textarea>
+</p>
+<h2>Slaptažodis:</h2>
+<input name="regPassword" type="password" placeholder="********">
+<select name="regSelect">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<br>
+<br>
+<input name="regSubmit" type="submit" value="Siųsti">
+</body>
+</html>
