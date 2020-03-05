@@ -75,7 +75,7 @@ console.log(_arrayB4);
 // B.5. Duotas masyvas html, css, js. Parodykite pirmąjį ir paskutinį elementus.
 let _arrayB5 = ['html','css','js'];
 let _arrayB5end = _arrayB5.length-1
-console.log(`Pirmas: ${_arrayB5[0]}, paskutinis: ${_arrayB5[_arrayB5end]}`); // Taip paprasčiau, bet reikėtų padaryt paskutinio elemento radimą.
+console.log(`Pirmas: ${_arrayB5[0]}, paskutinis: ${_arrayB5[_arrayB5end]}`);
 // B.6. Duotas masyvas 3, 4, 1, 2, 7. Surūšiuokite jį.
 let _arrayB6 = [3,4,1,2,7];
 let _arraySort = _arrayB6.sort();
