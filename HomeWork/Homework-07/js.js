@@ -26,7 +26,7 @@ document.write(`. method: ${arrayA6.c}<hr>`);
 // A.7. Sukurkite objektą su savaitės dienomis. Raktai jame turėtų būti dienų skaičiai nuo savaitės pradžios (pirmadienis - pirmasis ir t.t.). Parodykite dabartinę savaitės dieną.
 let date = new Date();
 let weekDayAdress = date.getDay();
-if (weekDayAdress==0){weekDayAdress=7}
+if (weekDayAdress===0){weekDayAdress=7}
 let weekDayWord = {
     1: "Pirmadienis",
     2: "Antradienis",
