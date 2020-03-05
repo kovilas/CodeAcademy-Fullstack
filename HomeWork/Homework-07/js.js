@@ -11,7 +11,7 @@ document.write(`Task A.3.:<br><br>${_arrayA3[0]} + ${_arrayA3[1]}, ${_arrayA3[2]
 // A.4. Sukurkite masyvą su elementais 2, 5, 3, 9. Pirmąjį masyvo elementą padauginkite iš antrojo, o trečiąjį elementą iš ketvirtojo. Sudėkite rezultatus, priskirkite kintamąjam. Parodykite šio kintamojo reikšmę.
 let _arrayA4 = [2,5,3,9];
 let _answerA4 = (_arrayA4[0]*_arrayA4[1])+(_arrayA4[2]*_arrayA4[3]);
-document.write(`Task A.4.:<br><br>(2 * 5) + (3 * 9) =  ${_answerA4}<hr>`);
+document.write(`Task A.4.:<br><br>(${_arrayA4[0]} * ${_arrayA4[1]}) + (${_arrayA4[2]} * ${_arrayA4[3]}) =  ${_answerA4}<hr>`);
 // A.5. Objektai (asociaciniai masyvai)
 // A.6. Sukurkite objektą a = 1, b = 2, c = 3. Parodykite elemento c reikšmę dviem būdais: per skliaustelius ir kaip objekto savybę.
 let _arrayA6 = {a: 1,b: 2,c: 3};
