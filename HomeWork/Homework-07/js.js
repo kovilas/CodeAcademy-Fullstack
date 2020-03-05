@@ -32,10 +32,10 @@ let _WeekDayWord = {
 };
 document.write(`Savaitės diena: ${_WeekDayWord[_WeekDayAdress]}<hr>`);
 // A.8. Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris. Atspausdinkite savaitės dieną naudojant sita kintamajį.
-let _day = prompt(`Įveskite savaitės dieną (1-7)`);
+let _dayPrompt = prompt(`Įveskite savaitės dieną (1-7)`);
 if (_day<1 || _day>7){
-    document.write(`Nėra ${_day}-os savaitės dienos!<hr>`);
-} else document.write(`Įvesta savaitės diena: ${_WeekDayWord[_WeekDayAdress]}<hr>`);
+    document.write(`Nėra ${_dayPrompt}-os savaitės dienos!<hr>`);
+} else document.write(`Įvesta savaitės diena: ${_WeekDayWord[_dayPrompt]}<hr>`);
 // A.9. Daugialypiai masyvai
 // A.10. Yra pateiktas masyvas [[1, 2, 3], [4, 5, 6], [7,8,9]]. Parodykite skaičių 4 iš šio masyvo.
 let _arrayA10 = [[1,2,3],[4,5,6],[7,8,9]];
