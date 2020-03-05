@@ -49,7 +49,7 @@ let _arrayA11 = {
 document.write(`${_arrayA11.js[0]}<hr>`);
 // A.12. Sukurkite dvimatį masyvą. Pirmieji du raktai yra lt ir en. Raktai turi savaitės dienų vardų masyvus lietuviškai ir angliškai. Naudodamiesi šiuo masyvu, pirmadienį parodykite lietuvių kalba, o trečiadienį - anglų kalba.
 let _WeekDayBilingual = {
-    lt: ['pirmadienis','antradienis','trečiadienis','ketvirtadienis','penktadienis','šeštadienis','sekmadienis','sekmadienis'],
+    lt: ['pirmadienis','antradienis','trečiadienis','ketvirtadienis','penktadienis','šeštadienis','sekmadienis'],
     en: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday','sunday']
 };
 document.write(`${_WeekDayBilingual.lt[1]}<br>${_WeekDayBilingual.en[3]}<hr>`);
