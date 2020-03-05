@@ -19,9 +19,9 @@ document.write(`() method: ${_arrayA6["c"]}<br>`);
 document.write(`. method: ${_arrayA6.c}<hr>`);
 // A.7. Sukurkite objektą su savaitės dienomis. Raktai jame turėtų būti dienų skaičiai nuo savaitės pradžios (pirmadienis - pirmasis ir t.t.). Parodykite dabartinę savaitės dieną.
 let _date = new Date();
-let _WeekDayAdress = _date.getDay();
-if (_WeekDayAdress==0){_WeekDayAdress=7}
-let _WeekDayWord = {
+let _weekDayAdress = _date.getDay();
+if (_weekDayAdress==0){_weekDayAdress=7}
+let _weekDayWord = {
     1: "Pirmadienis",
     2: "Antradienis",
     3: "Trečiadienis",
@@ -32,10 +32,10 @@ let _WeekDayWord = {
 };
 document.write(`Savaitės diena: ${_WeekDayWord[_WeekDayAdress]}<hr>`);
 // A.8. Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris. Atspausdinkite savaitės dieną naudojant sita kintamajį.
-let _day = prompt(`Įveskite savaitės dieną (1-7)`);
-if (_day<1 || _day>7){
-    document.write(`Nėra ${_day}-os savaitės dienos!<hr>`);
-} else document.write(`Įvesta savaitės diena: ${_WeekDayWord[_day]}<hr>`);
+let _dayPrompt = prompt(`Įveskite savaitės dieną (1-7)`);
+if (_dayPrompt<1 || _dayPrompt>7){
+    document.write(`Nėra ${_dayPrompt}-os savaitės dienos!<hr>`);
+} else document.write(`Įvesta savaitės diena: ${_weekDayWord[_dayPrompt]}<hr>`);
 // A.9. Daugialypiai masyvai
 // A.10. Yra pateiktas masyvas [[1, 2, 3], [4, 5, 6], [7,8,9]]. Parodykite skaičių 4 iš šio masyvo.
 let _arrayA10 = [[1,2,3],[4,5,6],[7,8,9]];
@@ -74,7 +74,7 @@ _arrayB4.push(4,5,6);
 console.log(_arrayB4);
 // B.5. Duotas masyvas html, css, js. Parodykite pirmąjį ir paskutinį elementus.
 let _arrayB5 = ['html','css','js'];
-let _arrayB5end = _arrayB5.length-1
+let _arrayB5end = _arrayB5.length-1;
 console.log(`Pirmas: ${_arrayB5[0]}, paskutinis: ${_arrayB5[_arrayB5end]}`);
 // B.6. Duotas masyvas 3, 4, 1, 2, 7. Surūšiuokite jį.
 let _arrayB6 = [3,4,1,2,7];
