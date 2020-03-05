@@ -1,3 +1,4 @@
+let i; // Kad PhpStorm'as ingnoruotų implicit declaration.
 // A.1. Sukurkite masyvą a, b, c. Parodykite masyvą naudodami console.log funkciją.
 let arrayA1 = ["a","b","c"];
 console.log(arrayA1);
@@ -35,7 +36,7 @@ let weekDayWord = {
     6: "Šeštadienis",
     7: "Sekmadienis"
 };
-document.write(`Savaitės diena: ${WeekDayWord[WeekDayAdress]}<hr>`);
+document.write(`Savaitės diena: ${weekDayWord[weekDayAdress]}<hr>`);
 
 // A.8. Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris. Atspausdinkite savaitės dieną naudojant sita kintamajį.
 let dayPrompt = prompt(`Įveskite savaitės dieną (1-7)`);
