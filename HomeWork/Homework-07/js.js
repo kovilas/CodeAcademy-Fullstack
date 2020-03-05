@@ -55,7 +55,7 @@ let _WeekDayBilingual = {
 document.write(`${_WeekDayBilingual.lt[1]}<br>${_WeekDayBilingual.en[3]}<hr>`);
 // A.13. Sukurkite kintamjį lang (reikšmės lt arba en) ir naudojant lang ir day parodykite dieną (edited)
 //
-// Kažko čia neįkirtau sąlygoje...
+// Placeholder
 //
 // B.1. Masyvu funkcijos
 // B.2. Duoti du masyvai: 1, 2, 3 ir 4, 5, 6. Sujunkite juos.
