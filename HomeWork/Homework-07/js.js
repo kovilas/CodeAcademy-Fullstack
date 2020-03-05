@@ -35,7 +35,7 @@ document.write(`Savaitės diena: ${_WeekDayWord[_WeekDayAdress]}<hr>`);
 let _day = prompt(`Įveskite savaitės dieną (1-7)`);
 if (_day<1 || _day>7){
     document.write(`Nėra ${_day}-os savaitės dienos!<hr>`);
-} else document.write(`Įvesta savaitės diena: ${_WeekDayWord[_WeekDayAdress]}`);
+} else document.write(`Įvesta savaitės diena: ${_WeekDayWord[_WeekDayAdress]}<hr>`);
 // A.9. Daugialypiai masyvai
 // A.10. Yra pateiktas masyvas [[1, 2, 3], [4, 5, 6], [7,8,9]]. Parodykite skaičių 4 iš šio masyvo.
 let _arrayA10 = [[1,2,3],[4,5,6],[7,8,9]];
@@ -85,7 +85,7 @@ _arrayB7=_arrayB7.slice(0,3);
 console.log(_arrayB7);
 // B.8. Duotas masyvas [1, 2, 3, 4, 5]. Konvertuokite masyvą į [1, 4, 5].
 //
-// ...
+// Placeholder
 //
 // B.9. For ir While
 // B.10. Atspausdinkite skaičių stulpelį nuo 1 iki 100.
@@ -135,7 +135,7 @@ document.write(`<hr>`);
 // B.20. Duotas masyvas su elementais 2, 5, 9, 15, 0, 4.
 // Naudodami for ir if parodykite masyvo elementus kurie yra daugiau nei 3, bet mažiau nei 10
 //
-// ...
+// Placeholder
 //
 // B.21. Duotas masyvas su skaičiais. Skaičiai gali būti teigiami ir neigiami. Raskite teigiamų masyvo skaičių sumą.
 let _arrayB21 = [1,-5,6,-8,-9,25,36,24,-5];
