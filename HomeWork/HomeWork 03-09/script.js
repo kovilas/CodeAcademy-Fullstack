@@ -1,6 +1,6 @@
 // 1. Parašykite funkciją, kuri grąžina skaičiaus kvadratą. Skaičius perduodamas kaip parametras.
 let input1 = parseInt(prompt('Skaičius, keliamas kvadratu:'));
-function sqrt (num){return num * num;}
+function sqrt (num){return num ** 2;}
 document.write(`SQRT(${input1}) = ${sqrt(input1)}<hr>`);
 
 // 2. Parašykite funkciją, kuri grąžina dviejų skaičių sumą. Skaičiai perduodami funkcijos parametrus.
