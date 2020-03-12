@@ -13,7 +13,7 @@ document.write(`${input2A} + ${input2B} = ${res2(input2A,input2B)}<hr>`);
 let input3A = parseInt(prompt('(B-A)/C ; įveskite A:'));
 let input3B = parseInt(prompt('(B-A)/C ; įveskite B:'));
 let input3C = parseInt(prompt('(B-A)/C ; įveskite C:'));
-function res3 (pa,pb,pc){return ((pb-pa)/pc);}
+function res3 (pa,pb,pc){return ((pb - pa) / pc);}
 document.write(`(${input3B} - ${input3A}) / ${input3C} = ${res3(input3A,input3B,input3C)}<hr>`);
 
 // 4. Parašykite funkciją, kuri priima kaip parametrą skaičių nuo 1 iki 7, o grąžina savaitės dieną lietuvių kalba.
@@ -28,8 +28,8 @@ function weekDayLT (input){
         'Šeštadienis',
         'Sekmadienis'
     ];
-        if (input<1||input>7||input == null||isNaN(input))
+        if (input < 1||input > 7 || input == null || isNaN(input))
             {return 'Neteisinga įvestis.'}
-        return arr_weekDayWord[input-1]; // Input-1 = input'as prilyginamas masyvo index'ui
+        return arr_weekDayWord[input - 1]; // Input-1 = input'as prilyginamas masyvo index'ui
 }
 document.write(`${inputWeekDay} = ${weekDayLT(inputWeekDay)}<hr>`);
