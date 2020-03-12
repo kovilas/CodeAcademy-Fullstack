@@ -19,7 +19,15 @@ document.write(`(${input3B} - ${input3A}) / ${input3C} = ${res3(input3A,input3B,
 // 4. Parašykite funkciją, kuri priima kaip parametrą skaičių nuo 1 iki 7, o grąžina savaitės dieną lietuvių kalba.
 let inputWeekDay = parseInt(prompt('Įveskite savaitės dieną (1-7):'));
 function weekDayLT (input){
-    let arr_weekDayWord =['Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis','Sekmadienis'];
+    let arr_weekDayWord = [
+        'Pirmadienis',
+        'Antradienis',
+        'Trečiadienis',
+        'Ketvirtadienis',
+        'Penktadienis',
+        'Šeštadienis',
+        'Sekmadienis'
+    ];
         if (input<1||input>7||input == null||isNaN(input))
             {return 'Neteisinga įvestis.'}
         return arr_weekDayWord[input-1];
