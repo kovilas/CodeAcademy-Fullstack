@@ -30,6 +30,6 @@ function weekDayLT (input){
     ];
         if (input<1||input>7||input == null||isNaN(input))
             {return 'Neteisinga įvestis.'}
-        return arr_weekDayWord[input-1];
+        return arr_weekDayWord[input-1]; // Input'as prilyginamas masyvo index'ui
 }
 document.write(`${inputWeekDay} = ${weekDayLT(inputWeekDay)}<hr>`);
