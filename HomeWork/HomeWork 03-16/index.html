@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="boxSVG"> <!-- šitas rotate nebereikalingas, kai radau SVG transform="rotate" -->
+<svg width="100vw" height="100vh" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"> <!-- išsiaiškinti dėl dydžio -->
+    <g fill="grey"
+       transform="rotate(-10 50 100)"> <!-- (<a> [<x> <y>]); a - pasukimo kampas; [x y] - pasukimo centro koordinatės -->
+        <path id="path" fill="none" stroke="lightgrey" stroke-width="2"
+          d="M20,50 l200,0 z" />
+        <circle r="10" fill="red">
+            <animateMotion dur="5s" repeatCount="indefinite" >
+                <mpath xlink:href="#path"/> <!-- priskiriamas tas pats path, kaip aukščiau -->
+            </animateMotion>
+        </circle>
+    </g>
+</svg>
+</div>
+<div id="boxControl">
+    <div class="controls">
+        <button class="newColor">Change color</button>
+        <div><input type="radio" class="full" id="fig1" name="radio" value="fig1"/> <label for="fig1">Fig1</label></div>
+        <div><input type="radio" class="full" id="fig2" name="radio" value="fig2"/> <label for="fig2">Fig2</label></div>
+        <div><input type="radio" class="full" id="fig3" name="radio" value="fig3"/> <label for="fig3">Fig3</label></div>
+        <div><input type="radio" class="full" id="fig4" name="radio" value="fig4"/> <label for="fig4">Fig4</label></div>
+        <div><input type="radio" class="full" id="fig5" name="radio" value="fig5"/> <label for="fig5">Fig5</label></div>
+        <div><input type="range" min="0" value="0" max="1000" step="1" id="rotate" /></div>
+    </div>
+</div>
+<div id="boxCanvas">
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
