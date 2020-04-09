@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body { margin: 24px; }
+    </style>
+</head>
+<body>
+<svg width="128" height="128" id="dice">
+    <defs>
+        <circle id="pip-center-center" cx="44" cy="44" r="10" />
+        <circle id="pip-top-left" cx="10" cy="10" r="10" />
+        <circle id="pip-top-right" cx="78" cy="10" r="10" />
+        <circle id="pip-center-left" cx="10" cy="44" r="10" />
+        <circle id="pip-center-right" cx="78" cy="44" r="10" />
+        <circle id="pip-bottom-left" cx="10" cy="78" r="10" />
+        <circle id="pip-bottom-right" cx="78" cy="78" r="10" />
+    </defs>
+
+    <rect width="128" height="128" fill="#000" rx="8" />
+    <rect width="112" height="112" fill="#FFF" x="8" y="8" rx="2" />
+
+    <!-- width="88" height="88" -->
+    <g fill="#000" transform="translate(20, 20)" id="dice-faces">
+        <g display="none">
+            <use xlink:href="#pip-center-center" />
+            <set id="one" attributeName="display" to="block" begin="300ms" dur="200ms" />
+        </g>
+
+        <g display="none">
+            <use xlink:href="#pip-top-right" />
+            <use xlink:href="#pip-bottom-left" />
+            <set id="two" attributeName="display" to="block" begin="150ms" dur="200ms" />
+        </g>
+
+        <g display="none">
+            <use xlink:href="#pip-top-right" />
+            <use xlink:href="#pip-center-center" />
+            <use xlink:href="#pip-bottom-left" />
+            <set id="three" attributeName="display" to="block" begin="750ms" dur="200ms" />
+        </g>
+
+        <g display="none">
+            <use xlink:href="#pip-top-left" />
+            <use xlink:href="#pip-top-right" />
+            <use xlink:href="#pip-bottom-left" />
+            <use xlink:href="#pip-bottom-right" />
+            <set id="four" attributeName="display" to="block" begin="450ms" dur="200ms" />
+        </g>
+
+        <g display="none">
+            <use xlink:href="#pip-top-left" />
+            <use xlink:href="#pip-top-right" />
+            <use xlink:href="#pip-bottom-left" />
+            <use xlink:href="#pip-bottom-right" />
+            <use xlink:href="#pip-center-center" />
+            <set id="five" attributeName="display" to="block" begin="600ms" dur="200ms" />
+        </g>
+
+        <g display="none">
+            <use xlink:href="#pip-top-left" />
+            <use xlink:href="#pip-top-right" />
+            <use xlink:href="#pip-center-left" />
+            <use xlink:href="#pip-center-right" />
+            <use xlink:href="#pip-bottom-left" />
+            <use xlink:href="#pip-bottom-right" />
+            <set id="six" attributeName="display" to="block" begin="0s" dur="200ms" />
+        </g>
+    </g>
+</svg>
+<script type="text/javascript">
+    var sets = document.querySelectorAll('set');
+    var randomIndex = Math.floor(Math.random() * sets.length);
+    var randomSet = sets[randomIndex];
+
+    randomSet.setAttribute('fill', 'freeze');
+</script>
+</body>
+</html>

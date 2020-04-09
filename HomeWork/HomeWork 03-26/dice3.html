@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<?php
+
+if (isset($_POST['roll'])) {
+    $rand1 = rand(1, 6);
+    $rand2 = rand(1, 6);
+    echo 'Išridenote: '.$rand1.' ir '.$rand2;
+}
+
+?>
+
+<form action="index.php" method="POST">
+    <input type="Submit" name="roll" value="Ridenti">
+</form>
+
+</body>
+</html>
