@@ -34,7 +34,6 @@
                 </div>
             </form>
         </div>
-    <!-------------------Reply Section------->
     <div id="second">
         <div class="row">
             <div class="col-md-2">
@@ -57,16 +56,26 @@
 
             // dabar galime vartoti comments.txt esančius duomenis kaip masyvą $arr_data
             //var_export($arrData);        // Test to see the array
-            /*foreach (arrData as pullData{
-                echo '
-                '
-            */
-            }
-        }
-        else echo 'The file '. $fileTXT .' does not exists';
-        ?>
+            foreach ($arrData as $pullData):
+                ?>
+                <div class="card bg-light ml-4 mb-3 pl-2" style="max-width: 60rem;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2" class="border bottom" style=" height: 10rem;">
+                                <img src="https://img.icons8.com/color/96/000000/mime.png" class="img-thumbnail"/>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="text-primary font-weight-bold"><?php echo $pullData['Name'] ?></span> made a post
+                                <br>
+                                <?php echo $pullData['Time'] ?>
+                            </div>
+                        </div>
+                        <div class="ml-1"><?php echo $pullData['Comment'] ?></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php } ?>
     </div>
-
 </div>
 </body>
 </html>
